@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>photogallery</title>
     </head>
 <body>
     <header>
@@ -15,90 +17,101 @@
             </ul>
         </nav>
     </header>
-<main>
-<h2>About</h2>
-<img src="TK.png" alt="person photographing a sunset">
+<main id="wrapper">
+    <section id="about">
+        <h2 class="rightabout">About</h2>
+            <img class="leftabout" src="TK.png" alt="person photographing a sunset">
 
-<p>Hello!</p>
-<p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery</p>
-<p>Here are some highlights of my work. 
-The locations and year are in the caption.</p>
+            <p class="rightabout">Hello!<br>
+            I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+    </section>
 
-<figure>
-<img src="Chile.png" alt="beautiful beach in Chile">
-<figcaption>Chile, 2001</figcaption>
-</figure>
+<section id="gallery">
+    <h2>Gallery</h2>
+        <p>Here are some highlights of my work. 
+        The locations and year are in the caption.</p>
 
-<figure>
-<img src="Guatemala.png" alt="purple flowers by a lake">
-<figcaption>Guatemala, 1997</figcaption>
-</figure>
+    <figure class="small">
+        <img src="Chile.png" alt="beautiful beach in Chile">
+        <figcaption class="a">Chile, 2001</figcaption>
+    </figure>
 
-<figure>
-<img src="Hawaii.png" alt="beach coastline with lush green cliffs">
-<figcaption>Hawaii, 2010</figcaption>
-</figure>
+    <figure class="small">
+        <img src="Guatemala.png" alt="purple flowers by a lake">
+        <figcaption class="b">Guatemala, 1997</figcaption>
+    </figure>
 
-<figure>
-<img src="Iran.png" alt="sunrise over hills and wildflowers">
-<figcaption>Iran, 1999</figcaption> 
-</figure>
+    <figure class="small">
+        <img src="Hawaii.png" alt="beach coastline with lush green cliffs">
+        <figcaption class="c">Hawaii, 2010</figcaption>
+    </figure>
 
-<figure>
-<img src="Ireland.png" alt="foggy hillside featuring green grass and trees">
-<figcaption>Ireland, 2012</figcaption>
-</figure>
+    <figure class="big">
+        <img src="Iran.png" alt="sunrise over hills and wildflowers">
+        <figcaption class="a">Iran, 1999</figcaption> 
+    </figure>
 
-<figure>
-<img src="Italy.png" alt="view of a mountain with pine tree branches peaking in">
-<figcaption>Italy, 2015</figcaption>
-</figure>
+    <figure class="big">
+        <img src="Ireland.png" alt="foggy hillside featuring green grass and trees">
+        <figcaption class="c">Ireland, 2012</figcaption>
+    </figure>
 
-<figure>
-<img src="Moab-Desert.png" alt="red rock dessert with sunset looming over">
-<figcaption>Moab Desert, 2020</figcaption>
-</figure>
+    <figure class="big">
+        <img src="Italy.png" alt="view of a mountain with pine tree branches peaking in">
+        <figcaption class="d">Italy, 2015</figcaption>
+    </figure>
 
-<figure>
-<img src="Rocky-Mountains.png" alt="rocky mountain columns with snow at the base">
-<figcaption>Rocky Mountains, 2009</figcaption>
-</figure>
+    <figure class="small">
+        <img src="Moab-Desert.png" alt="red rock dessert with sunset looming over">
+        <figcaption class="c">Moab Desert, 2020</figcaption>
+    </figure>
 
-<figure>
-<img src="Switzerland.png" alt="snowy mountainside surrounded by pine trees">
-<figcaption>Switzerland, 2014</figcaption>
-</figure>
+    <figure class="small">
+        <img src="Rocky-Mountains.png" alt="rocky mountain columns with snow at the base">
+        <figcaption class="a">Rocky Mountains, 2009</figcaption>
+    </figure>
 
-<figure>
-<img src="UK.png" alt="valley covered in lush grass and calm skies">
-<figcaption>UK, 2005</figcaption>
-</figure>
+    <figure class="small">
+        <img src="Switzerland.png" alt="snowy mountainside surrounded by pine trees">
+        <figcaption class="e">Switzerland, 2014</figcaption>
+    </figure>
 
-<figure>
-<img src="USA.png" alt="field of wildflowers laying underneath a cloudy sunset">
-<figcaption>USA, 2021</figcaption>
-</figure>
+    <figure class="small">
+        <img src="UK.png" alt="valley covered in lush grass and calm skies">
+        <figcaption class="c">UK, 2005</figcaption>
+    </figure>
 
-<figure>
-<img src="Wyoming.png" alt="pine trees and mountains over a lake">
-<figcaption>Wyoming, 2021</figcaption>
-</figure>
+    <figure class="small">
+        <img src="USA.png" alt="field of wildflowers laying underneath a cloudy sunset">
+        <figcaption class="b">USA, 2021</figcaption>
+    </figure>
 
+    <figure class="small">
+        <img src="Wyoming.png" alt="pine trees and mountains over a lake" class="small">
+        <figcaption class="b">Wyoming, 2021</figcaption>
+    </figure>
+</section>
+</main>
+
+    <section id="contact">
 <h2>Contact</h2>
 <p>Please fill out this form and I’ll connect with you soon.</p>
-
-<h3>Your contact information</h3>
 <form>
-<label>Name</label>
-<input type="text" id="name" placeholder="Your full name">
-<label>Email</label>
-<input type="text" id="email" placeholder="Enter your email address">
-<label>Message</label>
-<input type="text" id="message" placeholder="What can I help you with?">
-Submit
+<h3>Your contact information</h3>
+    <label class="shift">Name</label><br>
+    <input type="text" id="name" placeholder="Your full name"><br>
+
+    <label class="shift">Email</label><br>
+    <input type="text" id="email" placeholder="Enter your email address"><br>
+
+    <label class="shift">Message</label><br>
+    <input type="text" id="message" placeholder="What can I help you with?">
+
+    <button type="submit" id="submit" value="SUBMIT">Submit</button>
 </form>
+</section>
 <footer>
 <small>Copyright 2021 TK Photography</small>
 </footer>
 </body>
+</html>
